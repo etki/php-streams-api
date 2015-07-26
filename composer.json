@@ -1,0 +1,26 @@
+{
+  "name": "etki/streams-api",
+  "keywords": ["stream"],
+  "description": "Streams API",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Etki",
+      "email": "etki@etki.name",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/etki/php-streams-api/issues/",
+    "sources": "https://github.com/etki/php-streams-api.git"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Etki\\Specification\\Api\\Stream\\": "src/"
+    }
+  },
+  "require": {
+      "php": ">= 7.0"
+  }
+}

@@ -1,0 +1,9 @@
+# IDE files
+.idea
+.project
+.settings
+nbproject
+
+# Composer stuff
+/vendor
+/composer.lock
