@@ -21,22 +21,10 @@ interface StreamInterface
     public function close();
 
     /**
-     * Retrieves attached metadata if it is available or just returns null.
+     * Tells if stream is closed.
      *
-     * @param string $metaDataKey Key to return metadata for.
-     *
-     * @return mixed|null
+     * @return boolean
      * @since 0.1.0
      */
-    public function getMetaData(string $metaDataKey);
-
-    /**
-     * Tells if has metadata for specified key.
-     *
-     * @param string $metaDataKey Key to check.
-     *
-     * @return bool
-     * @since 0.1.0
-     */
-    public function hasMetaData(string $metaDataKey);
+    public function isClosed();
 }
