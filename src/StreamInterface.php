@@ -26,5 +26,5 @@ interface StreamInterface
      * @return boolean
      * @since 0.1.0
      */
-    public function isClosed();
+    public function isClosed() : bool;
 }

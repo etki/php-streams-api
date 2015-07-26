@@ -20,7 +20,7 @@ interface MetaDataSupportingStream extends StreamInterface
      * @return mixed|null
      * @since 0.1.0
      */
-    public function getMetaData(string $metaDataKey);
+    public function getMetaData(string $metaDataKey) : bool;
 
     /**
      * Tells if has metadata for specified key.
@@ -30,5 +30,5 @@ interface MetaDataSupportingStream extends StreamInterface
      * @return bool
      * @since 0.1.0
      */
-    public function hasMetaData(string $metaDataKey);
+    public function hasMetaData(string $metaDataKey) : bool;
 }

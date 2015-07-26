@@ -34,5 +34,5 @@ interface SeekableStreamInterface extends StreamInterface
      * @return void
      * @since 0.1.0
      */
-    public function seek(int $position) : void;
+    public function seek(int $position);
 }
