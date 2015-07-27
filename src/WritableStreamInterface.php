@@ -2,6 +2,8 @@
 
 namespace Etki\Specification\Api\Stream;
 
+use Etki\Specification\Api\Stream\Exception\InvalidDataArrayContentException;
+
 /**
  * Describes stream that has write access to it.
  *
@@ -15,7 +17,10 @@ interface WritableStreamInterface extends StreamInterface
     /**
      * Writes data to stream.
      *
-     * @param int[] $data
+     * @param int[] $data Data to write
+     *
+     * @throws InvalidDataArrayContentException Thrown if invalid data has been
+     *                                          passed.
      *
      * @return int Bytes written.
      * @since 0.1.0

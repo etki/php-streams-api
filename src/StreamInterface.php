@@ -21,7 +21,8 @@ interface StreamInterface
     public function close();
 
     /**
-     * Tells if stream is closed.
+     * Tells if stream is closed. Please note that particular streams (e.g.
+     * network stream) may be closed by third party at any moment.
      *
      * @return boolean
      * @since 0.1.0

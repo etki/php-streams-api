@@ -25,4 +25,12 @@ interface ReadableStreamInterface extends StreamInterface
      * @since 0.1.0
      */
     public function read(int $length) : array;
+
+    /**
+     * Tells if stream has data.
+     *
+     * @return bool
+     * @since 0.1.0
+     */
+    public function hasData() : bool;
 }
